@@ -1,0 +1,147 @@
+
+.content-item {
+  border: 2px solid #666666;
+  margin: 5px;
+  padding: 2%;
+  line-height: 99%;
+  border-radius: 12px;
+  transition: width 2s, height 2s,transform 2s;
+}
+
+.profilePic {
+    width: 80%;
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+    float: left;
+}
+
+.profilePic img {
+    width: 100%;
+}
+p {
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0 0 25px;
+    font-weight: bold;
+    color: #003366;
+}
+a {
+    color:#5C07E7;
+}
+
+.header {
+
+
+    border: 2px solid #666666;
+    border-radius: 12px;
+    margin-top: 1px;
+    transition: width 2s, height 2s,transform 2s;
+}
+.header:hover{
+
+    border: 2px solid #5C07E7;
+}
+
+.header-content {
+    width: 100%;
+    line-height: 100%;
+}
+.header-content h1,
+.header-content h2,
+.header-content h3 {
+    text-transform: uppercase;
+    color: #003366;
+    font-family: Montserrat-Bold;
+}
+
+.header-content p {
+       font-size: 12px;
+    color: #003366;
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+}
+
+
+li {
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    line-height: 32px;
+    margin: 0 0 2px;
+    color: #003366;
+}
+.h2{
+    width: 100%;
+    text-align: center;
+
+}
+a{
+    text-underline: none;
+}
+.link:hover {
+    text-decoration: none;
+    color: grey;
+    text-underline: none;
+}
+.content-item {
+    border: 2px solid #666666;
+    margin: 5px;
+    padding: 2%;
+    line-height: 99%;
+    border-radius: 12px;
+    transition: width 2s, height 2s,transform 2s;
+}
+.content-item:hover {
+
+    border: 2px solid #5C07E7;
+
+}
+.content-item h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #003366;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Montserrat-Bold;
+}
+.footer {
+
+    border: 2px solid #5C07E7;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.footer p:hover{
+
+    color: #5C07E7;
+}
+
+.footer h4 {
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #003366;
+    text-align: center;
+    text-decoration: underline;
+}
+.error {
+    position: absolute;
+    color: red;
+    font-size: .6rem;
+}
+.link {
+    text-decoration: none;
+    color: grey;
+    text-underline: none;
+
+}
+
+.Navlink {
+    text-decoration: none;
+    color: grey;
+    text-underline: none;
+
+
+}
