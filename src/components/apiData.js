@@ -20,7 +20,7 @@ const ApiData = () => {
     return (
         <>
             <Grid container justify={'center'}>
-            <h1 className={'my-4 font-weight-bold-display-4'} style={{align:'center'}}>
+            <h1 className={'my-4 font-weight-bold-display-4'} style={{align:'center',color:'#ffffff'}}>
                 SABC NEWS API
 
             </h1>

@@ -11,6 +11,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UpdateDetails from "./components/UpdateDetails";
 import ApiData from './components/apiData';
+import Article from './components/article';
 
 
 function App() {
@@ -19,14 +20,15 @@ function App() {
 
 
       <Router>
-    <div className="App">
+    <div className="App" style={{backgroundImage:"url(/back.jpg)",
+        backgroundRepeat:"no-repeat",backgroundSize:"cover",height:"100%"}}>
 
         <NavBar/>
 
 
         <Switch>
 
-
+            <Route exact path={'/Article'}  render={(props) => <Article{...props}/>}/>
             <Route exact path={'/About'}  render={(props) => <About{...props}/>}  />
             <Route exact path={'/Profile'}  render={(props) => <Profile{...props}/>}  />
             <Route exact path={'/UserDetails'}  render={(props) => <UserDetails{...props}/>}  />

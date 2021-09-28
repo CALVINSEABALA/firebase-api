@@ -8,6 +8,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {NavLink} from 'react-router-dom';
+import {Grid} from "@material-ui/core";
+import '../App.css';
 
 
 
@@ -15,6 +17,8 @@ import {NavLink} from 'react-router-dom';
 const useStyles = makeStyles({
     root: {
         minWidth: 50,
+        backdropFilter:'blur(1px)',
+        boxShadow:' 0 4px 30px rgba(0, 0, 0,.1)',
     },
     bullet: {
         display: 'inline-block',
@@ -36,37 +40,47 @@ const useStyles = makeStyles({
         fontSize: 3,
 
     },
+    btn: {
+        backgroundColor:'#448AFF',
+
+    },
+    link: {
+      textDecoration:'none',
+      fontWeight:'bold',
+        color:'white',
+    }
 });
 
 
 const  Cards = (props) => {
-    const { title, author,description,source, urlToImage, publishedAt,url } = props;
+    const CardsObj = props;
+    const { title, author,description,source, urlToImage, publishedAt,url,content } = props;
     const classes = useStyles();
     return (
 
 
         <Card className={classes.root} variant="outlined">
             <CardHeader
-                title={source.name} subheader={author}/>
+                title={source.name}/>
             <CardMedia
                 className={classes.media}
                 image={urlToImage}
                 title={title}
             />
+
             <CardContent>
-                <Typography variant="body1" color="textSecondary" component="p"  className={classes.p} >
-                    {
-                        description
-                    }
+                <Typography variant="body1" color="textSecondary" component="p"  className={classes.p} ><b>
+                    {title
+                    }</b>
                     <br/>
-                    Published Date: {publishedAt}
                 </Typography>
             </CardContent>
 
 
 
                 <CardActions>
-                    <Button size="small" variant={'outlined'} onClick={() => window.open(url)}> More Details</Button>
+                    <Button size="small" variant={'outlined'} className={classes.btn}> <NavLink to={{pathname:'/Article',
+                        article:CardsObj}}  className={classes.link}> Read</NavLink></Button>
                 </CardActions>
         </Card>
     );
